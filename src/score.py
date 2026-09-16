@@ -76,16 +76,20 @@ def compute_metrics(predictions: list[dict], labels: list[str]) -> dict:
     }
 
 
-def run(mode: str, model: str = MODEL, n_per_class: int = 50, seed: int = 42) -> Path:
+def run(mode: str, model: str = MODEL, n_per_class: int = 50, seed: int = 42, with_emotion: bool | None = None) -> Path:
     df = load_reviews()
 
     if mode == "first100":
-        n_classes, with_emotion = 2, False
+        n_classes = 2
+        if with_emotion is None:
+            with_emotion = False
         subset = df.head(100).copy()
         labels = ["POSITIVE", "NEGATIVE"]
         out_path = RESULTS_DIR / "run_2class_first100.json"
     elif mode == "balanced":
-        n_classes, with_emotion = 3, True
+        n_classes = 3
+        if with_emotion is None:
+            with_emotion = True
         df["true_label_3class"] = df["rating"].apply(label_3class)
         subset = balanced_sample(df, label_col="true_label_3class", n_per_class=n_per_class, seed=seed)
         labels = ["POSITIVE", "NEUTRAL", "NEGATIVE"]
@@ -124,5 +128,7 @@ if __name__ == "__main__":
     parser.add_argument("--model", default=MODEL)
     parser.add_argument("--n-per-class", type=int, default=50)
     parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--emotion", dest="with_emotion", action="store_true", default=None)
+    parser.add_argument("--no-emotion", dest="with_emotion", action="store_false")
     args = parser.parse_args()
-    run(args.mode, model=args.model, n_per_class=args.n_per_class, seed=args.seed)
+    run(args.mode, model=args.model, n_per_class=args.n_per_class, seed=args.seed, with_emotion=args.with_emotion)

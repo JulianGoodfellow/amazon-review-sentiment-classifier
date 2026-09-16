@@ -1,22 +1,22 @@
 {
   "mode": "first100",
   "n_classes": 2,
-  "with_emotion": false,
+  "with_emotion": true,
   "model": "gpt-4o-mini",
   "seed": null,
   "n_per_class": null,
-  "generated_at": "2026-09-16T04:41:44.151529+00:00",
+  "generated_at": "2026-09-16T04:44:53.898097+00:00",
   "labels": [
     "POSITIVE",
     "NEGATIVE"
   ],
   "metrics": {
     "n": 100,
-    "accuracy": 0.96,
+    "accuracy": 0.97,
     "confusion_matrix": {
       "POSITIVE": {
-        "POSITIVE": 90,
-        "NEGATIVE": 3
+        "POSITIVE": 91,
+        "NEGATIVE": 2
       },
       "NEGATIVE": {
         "POSITIVE": 1,
@@ -26,15 +26,15 @@
     "per_class": {
       "POSITIVE": {
         "support": 93,
-        "precision": 0.989,
-        "recall": 0.9677,
-        "f1": 0.9783
+        "precision": 0.9891,
+        "recall": 0.9785,
+        "f1": 0.9838
       },
       "NEGATIVE": {
         "support": 7,
-        "precision": 0.6667,
+        "precision": 0.75,
         "recall": 0.8571,
-        "f1": 0.75
+        "f1": 0.8
       }
     }
   },
@@ -47,8 +47,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses a positive sentiment about having Amazon money, suggesting it is beneficial.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a positive sentiment about having Amazon money, indicating satisfaction.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 1,
+        "anticipation": 3,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 3,
+        "sadness": 0,
+        "surprise": 3,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 1,
@@ -58,8 +69,19 @@
       "verified_purchase": false,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses strong satisfaction with the gift card, highlighting its versatility and the positive reactions of recipients.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction and enthusiasm about giving Amazon gift cards as gifts.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 1,
+        "anticipation": 6,
+        "disgust": 1,
+        "fear": 0,
+        "joy": 7,
+        "sadness": 2,
+        "surprise": 4,
+        "trust": 3
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 2,
@@ -70,7 +92,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses enthusiasm and satisfaction with the gift card as a versatile gift option.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 5,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 7,
+        "sadness": 0,
+        "surprise": 4,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 3,
@@ -80,8 +113,19 @@
       "verified_purchase": false,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with the product's appearance and delivery speed.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the product and the shopping experience.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 1,
+        "anticipation": 8,
+        "disgust": 0,
+        "fear": 1,
+        "joy": 8,
+        "sadness": 1,
+        "surprise": 3,
+        "trust": 4
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 4,
@@ -91,8 +135,19 @@
       "verified_purchase": true,
       "true_label": "NEGATIVE",
       "predicted_label": "NEGATIVE",
-      "rationale": "The review expresses frustration and embarrassment over the gift cards having less value than expected.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses frustration and embarrassment about the gift cards not having the expected value.",
+      "llm_primary_emotion": "anger",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 5,
+        "disgust": 0,
+        "fear": 1,
+        "joy": 8,
+        "sadness": 1,
+        "surprise": 5,
+        "trust": 3
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 5,
@@ -103,7 +158,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses a positive sentiment about the snowman tin being adorable.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 6,
@@ -113,8 +179,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with the gift being great and easy.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a favorable opinion about the gift being great and easy.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 7,
@@ -124,8 +201,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with the quality and cuteness of the product.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a positive sentiment about the product's quality and cuteness.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 8,
@@ -135,8 +223,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses clear enthusiasm and satisfaction with the gifts.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses clear joy and satisfaction with the gifts for the granddaughters.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 9,
@@ -147,7 +246,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses appreciation for acknowledging helpful people, indicating a positive sentiment.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 10,
@@ -157,8 +267,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with the gift cards being a perfect gift for Christmas.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the gift being well-received, indicating a positive sentiment.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 5,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 6,
+        "sadness": 0,
+        "surprise": 3,
+        "trust": 3
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 11,
@@ -169,7 +290,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review highlights the gift card's validity and prompt arrival, indicating satisfaction.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "trust",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 3,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 3,
+        "sadness": 0,
+        "surprise": 3,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 12,
@@ -180,7 +312,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses satisfaction with the ease of using the gift card for gifting money.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 1,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 13,
@@ -190,8 +333,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses enthusiasm for the gift card as a great gift for online shoppers.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a positive sentiment about the gift card being a great gift for online shoppers.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 14,
@@ -201,8 +355,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review highlights the ease of use and convenience, indicating a positive sentiment.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the ease of use of the services mentioned.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 15,
@@ -213,7 +378,18 @@
       "true_label": "NEGATIVE",
       "predicted_label": "NEGATIVE",
       "rationale": "The review expresses frustration with the card not working, indicating a negative experience.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "anger",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 16,
@@ -223,8 +399,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review indicates that the recipient was pleased with the gift.",
-      "llm_primary_emotion": null
+      "rationale": "The review indicates that the recipient liked the gift, showing satisfaction with the product.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 17,
@@ -234,8 +421,19 @@
       "verified_purchase": false,
       "true_label": "POSITIVE",
       "predicted_label": "NEGATIVE",
-      "rationale": "The review highlights a significant issue with the service despite the positive aspect of the gift card presentation.",
-      "llm_primary_emotion": null
+      "rationale": "The review highlights a significant issue with the service despite a positive aspect of the gift card presentation.",
+      "llm_primary_emotion": "disgust",
+      "lexicon_emotion_scores": {
+        "anger": 1,
+        "anticipation": 8,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 4,
+        "sadness": 0,
+        "surprise": 3,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 18,
@@ -246,7 +444,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses satisfaction with the timely arrival of the gift card.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 19,
@@ -256,8 +465,19 @@
       "verified_purchase": false,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses a positive sentiment about the gift card.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a positive sentiment about the gift card being good.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 3,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 3,
+        "sadness": 0,
+        "surprise": 3,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 20,
@@ -267,8 +487,19 @@
       "verified_purchase": false,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The title and body both express a positive sentiment.",
-      "llm_primary_emotion": null
+      "rationale": "The title and body both express a positive sentiment about the product.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 21,
@@ -278,8 +509,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The title and body both express a positive sentiment.",
-      "llm_primary_emotion": null
+      "rationale": "The title and body both express a positive sentiment about the product.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 22,
@@ -289,8 +531,19 @@
       "verified_purchase": false,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The title and body both express a positive sentiment.",
-      "llm_primary_emotion": null
+      "rationale": "The title and body both express a positive sentiment about the product.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 23,
@@ -300,8 +553,19 @@
       "verified_purchase": false,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The title and body both express a positive sentiment.",
-      "llm_primary_emotion": null
+      "rationale": "The title and body both express a positive sentiment about the product.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 24,
@@ -311,8 +575,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The title and body both express a positive sentiment.",
-      "llm_primary_emotion": null
+      "rationale": "The title and body both express a positive sentiment about the product.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 25,
@@ -322,8 +597,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The title and body both express a positive sentiment.",
-      "llm_primary_emotion": null
+      "rationale": "The title and body both express a positive sentiment about the product.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 26,
@@ -333,8 +619,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The title and body both express a positive sentiment.",
-      "llm_primary_emotion": null
+      "rationale": "The title and body both express a positive sentiment about the product.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 27,
@@ -344,8 +641,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The title and body both express a positive sentiment.",
-      "llm_primary_emotion": null
+      "rationale": "The title and body both express a positive sentiment about the product.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 28,
@@ -355,8 +663,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The title and body both express a positive sentiment.",
-      "llm_primary_emotion": null
+      "rationale": "The title and body both express a positive sentiment about the product.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 29,
@@ -366,8 +685,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The title and body both express a positive sentiment.",
-      "llm_primary_emotion": null
+      "rationale": "The review is short but expresses a positive sentiment with the word 'Good.'",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 30,
@@ -378,7 +708,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses satisfaction with the gift card being perfect for Christmas.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 31,
@@ -388,8 +729,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses a clear positive sentiment about the ease of use.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a positive sentiment about the ease of use.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "none"
     },
     {
       "review_id": 32,
@@ -399,8 +751,19 @@
       "verified_purchase": true,
       "true_label": "NEGATIVE",
       "predicted_label": "NEGATIVE",
-      "rationale": "The review expresses frustration about an unintended charge.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses frustration over an unintended charge.",
+      "llm_primary_emotion": "anger",
+      "lexicon_emotion_scores": {
+        "anger": 1,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 2,
+        "surprise": 0,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "sadness"
     },
     {
       "review_id": 33,
@@ -410,8 +773,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses enthusiasm and satisfaction with the service.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses enthusiasm and satisfaction with Amazon as a service.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 34,
@@ -421,8 +795,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review highlights ease of use and recipient satisfaction, indicating a positive experience.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with ease of use and recipient choice, indicating a positive experience.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "none"
     },
     {
       "review_id": 35,
@@ -432,8 +817,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses happiness about a birthday surprise.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses happiness about a birthday surprise, indicating a positive sentiment.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 3,
+        "disgust": 0,
+        "fear": 2,
+        "joy": 5,
+        "sadness": 0,
+        "surprise": 5,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 36,
@@ -443,8 +839,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review indicates that the gift is always appreciated, suggesting a positive sentiment.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses that the gift is always appreciated, indicating a positive sentiment.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 5,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 5,
+        "sadness": 0,
+        "surprise": 4,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 37,
@@ -455,7 +862,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses enthusiasm and satisfaction with the product.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 38,
@@ -465,8 +883,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses enthusiasm about the ease of reloading gift cards.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a positive sentiment about the ease of reloading gift cards.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 39,
@@ -476,8 +905,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with the convenience of giving a gift.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the convenience of giving a gift, indicating a positive experience.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 40,
@@ -487,8 +927,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with the gift packaging.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the gift packaging, indicating a positive sentiment.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 41,
@@ -499,7 +950,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses satisfaction with the sandwiches and the ordering process.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 42,
@@ -510,7 +972,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses satisfaction with the pizza and the ordering process.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 43,
@@ -520,8 +993,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses a clear enjoyment and satisfaction with the store, highlighting that the cats love it.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a clear enjoyment of the store and its offerings for pets.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 44,
@@ -531,8 +1015,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with the card and the loading of money.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the card and the loading of money, indicating a positive experience.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 2,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anger"
     },
     {
       "review_id": 45,
@@ -543,7 +1038,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The use of thumbs up emojis indicates a positive sentiment.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "none"
     },
     {
       "review_id": 46,
@@ -553,8 +1059,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "NEGATIVE",
-      "rationale": "The review expresses disappointment despite the enthusiastic title.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses disappointment about the lack of a physical item despite the positive title.",
+      "llm_primary_emotion": "disgust",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 47,
@@ -565,7 +1082,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses a positive sentiment about gift cards being well-received.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 1,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anger"
     },
     {
       "review_id": 48,
@@ -575,8 +1103,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses excitement and satisfaction with the gift card and free tin, recommending it highly.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses excitement and satisfaction with the gift card and free tin offer.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 3,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 4,
+        "sadness": 0,
+        "surprise": 3,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 49,
@@ -586,8 +1125,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses a positive experience with the product being easy to load.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a positive experience with ease of use.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "none"
     },
     {
       "review_id": 50,
@@ -597,8 +1147,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses excitement and satisfaction with the gift choice.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses excitement and satisfaction with the gift choice, highlighting anticipation and joy.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 5,
+        "disgust": 0,
+        "fear": 1,
+        "joy": 5,
+        "sadness": 0,
+        "surprise": 5,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 51,
@@ -608,8 +1169,19 @@
       "verified_purchase": true,
       "true_label": "NEGATIVE",
       "predicted_label": "NEGATIVE",
-      "rationale": "The review expresses disappointment despite mentioning added value, indicated by the phrase 'A Bronx cheer for you!'",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses disappointment despite mentioning added value, indicated by the phrase 'no more' and the sarcastic 'Bronx cheer.'",
+      "llm_primary_emotion": "disgust",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 3,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 52,
@@ -619,8 +1191,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with the convenience and appropriateness of the gift, highlighting positive aspects.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the convenience and appropriateness of the gift card, indicating a positive sentiment.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 5,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 6,
+        "sadness": 0,
+        "surprise": 4,
+        "trust": 3
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 53,
@@ -630,8 +1213,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with the gift and its appeal to staff.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the gift and its reception among staff, indicating a positive experience.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 1,
+        "anticipation": 4,
+        "disgust": 1,
+        "fear": 1,
+        "joy": 6,
+        "sadness": 1,
+        "surprise": 4,
+        "trust": 3
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 54,
@@ -642,7 +1236,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses love for the product and highlights its features positively.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 55,
@@ -652,8 +1257,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with the product being simple and easy.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a favorable opinion with positive descriptors.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "none"
     },
     {
       "review_id": 56,
@@ -663,8 +1279,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review highlights a benefit of the product, indicating satisfaction.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the convenience of reloading the gift card.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 57,
@@ -675,7 +1302,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses strong enthusiasm and positivity about the gift.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 3,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 6,
+        "sadness": 0,
+        "surprise": 3,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 58,
@@ -685,8 +1323,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses enthusiasm about the gift being perfect for kids.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the gift, indicating a positive sentiment.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 3,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 4,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 59,
@@ -696,8 +1345,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with the ease of use and the absence of fees.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the ease of use and the absence of fees, indicating a positive experience overall.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 1,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 60,
@@ -707,8 +1367,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with receiving a promo and the quick posting of the gift card.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the promo and quick posting of the gift card.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 4,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 4,
+        "sadness": 0,
+        "surprise": 4,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 61,
@@ -718,8 +1389,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses a favorable opinion about saving money.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with saving money, indicating a positive experience.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 62,
@@ -729,8 +1411,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses enthusiasm for the company and the gift card, indicating a positive sentiment.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a positive sentiment towards receiving an Amazon gift card and has a light-hearted tone.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 63,
@@ -740,8 +1433,19 @@
       "verified_purchase": true,
       "true_label": "NEGATIVE",
       "predicted_label": "NEGATIVE",
-      "rationale": "The review expresses frustration with the card's usability and lack of customer service.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses frustration and disappointment with the card's usability and customer service.",
+      "llm_primary_emotion": "anger",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 3,
+        "disgust": 0,
+        "fear": 2,
+        "joy": 2,
+        "sadness": 2,
+        "surprise": 1,
+        "trust": 5
+      },
+      "lexicon_primary_emotion": "trust"
     },
     {
       "review_id": 64,
@@ -751,8 +1455,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses enthusiasm and satisfaction about giving a gift card, highlighting it as a great gift choice.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses enthusiasm and joy about giving a gift card, highlighting it as a great gift choice.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 6,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 7,
+        "sadness": 0,
+        "surprise": 5,
+        "trust": 3
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 65,
@@ -762,8 +1477,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses that the product is useful and alleviates guilt, indicating a positive sentiment.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a positive sentiment about the product being handy and reducing guilt.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 1,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 1,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "disgust"
     },
     {
       "review_id": 66,
@@ -773,8 +1499,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses happiness and satisfaction with giving Amazon Gift Cards as gifts.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses happiness about giving gift cards and the positive reactions they elicit.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 3,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 4,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 67,
@@ -785,7 +1522,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses enthusiasm and satisfaction with the ease of use.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "none"
     },
     {
       "review_id": 68,
@@ -795,8 +1543,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses a positive sentiment by stating that the product is easy to use.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a positive sentiment about ease of use.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "none"
     },
     {
       "review_id": 69,
@@ -806,8 +1565,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The title and body both express strong satisfaction with the product.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the product's performance.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "none"
     },
     {
       "review_id": 70,
@@ -818,7 +1588,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses satisfaction with the gift box and the positive impact it had on the recipient.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 8,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 7,
+        "sadness": 0,
+        "surprise": 5,
+        "trust": 3
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 71,
@@ -828,8 +1609,19 @@
       "verified_purchase": false,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses happiness about the quick shipping and satisfaction with the purchase.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses happiness about the quick shipping and satisfaction with the purchase, indicating a positive experience.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 4,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 3,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 72,
@@ -840,7 +1632,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses love for the gift box, indicating a positive sentiment.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 3,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 4,
+        "sadness": 0,
+        "surprise": 3,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 73,
@@ -850,8 +1653,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with the ease of giving a present.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the ease of giving a present, indicating a positive experience.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 74,
@@ -861,8 +1675,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses a clear positive sentiment with the phrase 'great buy'.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a positive sentiment with the phrase 'great buy.'",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "none"
     },
     {
       "review_id": 75,
@@ -872,8 +1697,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses happiness and satisfaction with the product.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses happiness and satisfaction with the product, indicating a positive sentiment.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 76,
@@ -883,8 +1719,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses enthusiasm and satisfaction with the gift card and packaging.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses enthusiasm and satisfaction with the product, highlighting its positive features.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 1,
+        "anticipation": 3,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 4,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 77,
@@ -895,7 +1742,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses a positive sentiment about timing.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "none"
     },
     {
       "review_id": 78,
@@ -905,8 +1763,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "Both the title and body express a positive sentiment about ease of use.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a positive sentiment about ease of use.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "none"
     },
     {
       "review_id": 79,
@@ -917,7 +1786,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses a positive sentiment about the cuteness of penguins.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "none"
     },
     {
       "review_id": 80,
@@ -928,7 +1808,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review highlights the benefits of the gift, indicating satisfaction with the choice it offers.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 1,
+        "surprise": 2,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 81,
@@ -938,8 +1829,19 @@
       "verified_purchase": false,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with the gift idea and its price.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the gift idea and its price, indicating a positive sentiment.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 82,
@@ -949,8 +1851,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses appreciation for the gift card and its presentation.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses gratitude and appreciation for the gift card's presentation.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 83,
@@ -959,9 +1872,20 @@
       "rating": 5.0,
       "verified_purchase": true,
       "true_label": "POSITIVE",
-      "predicted_label": "NEGATIVE",
-      "rationale": "The review lacks enthusiasm and suggests uncertainty about the gift's suitability.",
-      "llm_primary_emotion": null
+      "predicted_label": "POSITIVE",
+      "rationale": "The title suggests a positive experience, and the review implies satisfaction with the gift choice.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 84,
@@ -972,7 +1896,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses satisfaction with the value and improvement in shopping experience.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 85,
@@ -982,8 +1917,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses enthusiasm and satisfaction with the gift, highlighting its beauty and the recipient's enjoyment.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses happiness about the gift and its presentation, indicating a positive experience.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 4,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 4,
+        "sadness": 0,
+        "surprise": 3,
+        "trust": 3
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 86,
@@ -993,8 +1939,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The title 'Amazing' and the positive implication of versatility in the review indicate a favorable sentiment.",
-      "llm_primary_emotion": null
+      "rationale": "The title 'Amazing' suggests a strong positive sentiment, and the body supports this by highlighting versatility.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "none"
     },
     {
       "review_id": 87,
@@ -1005,7 +1962,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses satisfaction with the product as a gift card holder.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 1,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 1,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 88,
@@ -1015,8 +1983,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with the ease of using gift cards for holidays.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the ease of using gift cards for holidays, indicating a positive experience.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 89,
@@ -1027,7 +2006,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses that the friend liked the gift card, indicating a positive sentiment.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 3,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 4,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 90,
@@ -1038,7 +2028,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses happiness and recommends the gifts, indicating a positive experience.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 1,
+        "anticipation": 4,
+        "disgust": 0,
+        "fear": 1,
+        "joy": 4,
+        "sadness": 0,
+        "surprise": 3,
+        "trust": 4
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 91,
@@ -1048,8 +2049,19 @@
       "verified_purchase": true,
       "true_label": "NEGATIVE",
       "predicted_label": "NEGATIVE",
-      "rationale": "The review expresses regret about the purchase and suggests a better alternative.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses regret about the purchase and suggests a better alternative, indicating dissatisfaction.",
+      "llm_primary_emotion": "sadness",
+      "lexicon_emotion_scores": {
+        "anger": 1,
+        "anticipation": 4,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 3,
+        "sadness": 0,
+        "surprise": 3,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 92,
@@ -1059,8 +2071,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review recommends the gift and suggests it is suitable for various occasions.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a recommendation, indicating a positive sentiment towards the gift idea.",
+      "llm_primary_emotion": "trust",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 3,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 4,
+        "sadness": 0,
+        "surprise": 3,
+        "trust": 3
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 93,
@@ -1070,8 +2093,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review highlights convenience and satisfaction with the product.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the product's convenience and quality.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 1,
+        "anticipation": 4,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 3,
+        "sadness": 0,
+        "surprise": 2,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 94,
@@ -1081,8 +2115,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with the ease of holiday shopping.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the ease of holiday shopping, indicating a positive experience.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 2,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 1,
+        "trust": 1
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 95,
@@ -1093,7 +2138,18 @@
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses satisfaction with the ease of reloading the gift card balance from home.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 9,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 7,
+        "sadness": 1,
+        "surprise": 7,
+        "trust": 2
+      },
+      "lexicon_primary_emotion": "anticipation"
     },
     {
       "review_id": 96,
@@ -1103,8 +2159,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses strong affection for the card.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses strong affection for the card, indicating a positive sentiment.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 2,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "joy"
     },
     {
       "review_id": 97,
@@ -1114,8 +2181,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with ease of use and convenience.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses satisfaction with the product's ease of use and convenience, indicating a positive experience.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "none"
     },
     {
       "review_id": 98,
@@ -1126,7 +2204,18 @@
       "true_label": "NEGATIVE",
       "predicted_label": "POSITIVE",
       "rationale": "The review expresses satisfaction with the product's ease of use and a desire to have discovered it sooner.",
-      "llm_primary_emotion": null
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 0,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 0,
+        "sadness": 0,
+        "surprise": 0,
+        "trust": 0
+      },
+      "lexicon_primary_emotion": "none"
     },
     {
       "review_id": 99,
@@ -1136,8 +2225,19 @@
       "verified_purchase": true,
       "true_label": "POSITIVE",
       "predicted_label": "POSITIVE",
-      "rationale": "The review expresses satisfaction with the presentation of the gift.",
-      "llm_primary_emotion": null
+      "rationale": "The review expresses a positive sentiment about the gift being sent in a lovely container.",
+      "llm_primary_emotion": "joy",
+      "lexicon_emotion_scores": {
+        "anger": 0,
+        "anticipation": 4,
+        "disgust": 0,
+        "fear": 0,
+        "joy": 4,
+        "sadness": 2,
+        "surprise": 3,
+        "trust": 3
+      },
+      "lexicon_primary_emotion": "anticipation"
     }
   ]
 }
