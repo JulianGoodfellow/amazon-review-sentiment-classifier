@@ -180,6 +180,3 @@ screenshots/                          dashboard screenshots
 ```
 
 ---
-
-Built with [Claude Code](https://claude.com/claude-code); drafted by the agent
-from the saved run output and reviewed/edited before submission.
